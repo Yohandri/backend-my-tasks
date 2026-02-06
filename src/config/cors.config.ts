@@ -21,6 +21,7 @@ export const getCorsOptions = (): CorsOptions => {
         origin: [
             frontendUrl,
             'http://localhost:3000', // For local development
+            /^https:\/\/my-tasks-4a9af--.*\.web\.app$/, // Firebase Preview Channels
         ],
         credentials: true,
         methods: [
