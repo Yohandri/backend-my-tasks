@@ -49,9 +49,9 @@ export const createApp = (): Express => {
     // API info endpoint
     app.get('/api', (_req: Request, res: Response) => {
         res.status(200).json({
-            name: 'Todo App API',
+            name: 'Backend API for My Tasks',
             version: '1.0.0',
-            description: 'REST API for Todo Application',
+            description: 'REST API for user authentication and task management',
             endpoints: {
                 auth: '/api/auth',
                 tasks: '/api/tasks',
